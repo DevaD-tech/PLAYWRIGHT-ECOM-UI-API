@@ -21,25 +21,40 @@ The goal is to be:
 ### Project Structure
 
 ```text
-playwright-ecom-ui-api/
-├─ pages/                 # Page Objects for UI flows
-│  ├─ LoginPage.js
-│  ├─ ProductsPage.js
-│  ├─ CartPage.js
-│  └─ CheckoutPage.js
-├─ tests/
-│  ├─ ui/                 # UI test suite (Sauce Demo)
-│  │  ├─ login.spec.js
-│  │  ├─ product.spec.js
-│  │  ├─ cart.spec.js
-│  │  └─ checkout.spec.js
-│  └─ api/                # API test suite (Rahul Shetty e‑com API)
-│     ├─ auth.api.spec.js
-│     └─ addToCart.api.spec.js
-├─ test-data/             # Test data (e.g. users.json)
-├─ playwright.config.js   # Global Playwright configuration
-├─ package.json
-└─ package-lock.json
+playwright-ecom-ui-api
+│
+├── tests
+│   ├── ui
+│   │   ├── login.spec.js
+│   │   ├── product.spec.js
+│   │   └── cart.spec.js
+│   |   └── checkout.spec.js
+│   │
+│   └── api
+│       ├── auth.api.spec.js
+│       ├── addToCart.api.spec.js
+│      
+│
+├── pages
+│   ├── LoginPage.js
+│   ├── ProductsPage.js
+│   ├── CartPage.js
+│   └── CheckoutPage.js
+│
+├── test-data
+│   ├── users.json
+│   └── checkout.json
+│   
+│
+├── utils
+│   ├── apiHelper.js
+│   ├── testDataUtil.js
+│   
+│
+├── playwright.config.js
+├── package.json
+├── .gitignore
+└── README.md
 ```
 
 Key conventions:
