@@ -1,3 +1,5 @@
+import authApi from '../test-data/authApi.json';
+
 /**
  * Helper that performs an API login and returns an auth token
  * so that other API tests can reuse the authentication logic.
@@ -13,8 +15,8 @@ export async function loginAndGetToken(request) {
         'Content-Type': 'application/json',
       },
       data: {
-        userEmail: 'panda9898@gmail.com',
-        userPassword: 'Pandapapa@1',
+        userEmail: authApi.validUser.userEmail,
+        userPassword: authApi.validUser.userPassword,
       },
     },
   );

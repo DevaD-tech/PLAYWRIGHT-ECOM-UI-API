@@ -1,0 +1,20 @@
+{
+  "cart": {
+    "userId": "678a877ae2b5443b1f2839c0",
+    "product": {
+      "_id": "678a8f2ce2b5443b1f2844d5",
+      "productName": "qwerty",
+      "productCategory": "fashion",
+      "productSubCategory": "shirts",
+      "productPrice": 11500,
+      "productDescription": "Addias Originals chappals",
+      "productImage": "https://rahulshettyacademy.com/api/ecom/uploads/productImage_1737133868024.png",
+      "productRating": "0",
+      "productTotalOrders": "0",
+      "productStatus": true,
+      "productFor": "men",
+      "productAddedBy": "678a877ae2b5443b1f2839c0",
+      "__v": 0
+    }
+  }
+}
