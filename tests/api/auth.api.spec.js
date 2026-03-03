@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import authApi from '../../test-data/authApi.json';
 
 // Basic authentication smoke test for the e-commerce API
 test.describe('API - Authentication Tests', () => {
@@ -10,8 +11,8 @@ test.describe('API - Authentication Tests', () => {
           'Content-Type': 'application/json',
         },
         data: {
-          userEmail: 'panda9898@gmail.com',
-          userPassword: 'Pandapapa@1',
+          userEmail: authApi.validUser.userEmail,
+          userPassword: authApi.validUser.userPassword,
         },
       },
     );
